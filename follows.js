@@ -141,13 +141,12 @@
 									});
 
 									// Initialize Graph DOM Element
-								//	$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
-                                                                    	$('#feed-' + feedId +' .graph').attr('graph-' + feedId);
-
+									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
+                                                                    
 						 			// Build Graph
 									var graph = new Rickshaw.Graph( {
-									//	element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
-										element: document.querySelector('#graph-' + feedId),
+										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
+									
 										width: 600,
 										height: 200,
 										renderer:'area',

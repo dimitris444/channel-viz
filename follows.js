@@ -141,7 +141,8 @@
 									});
 
 									// Initialize Graph DOM Element
-									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
+								//	$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
+                                                                    	$('#feed-' + feedId + .graph').attr('id', 'graph-' + feedId);
 
 						 			// Build Graph
 									var graph = new Rickshaw.Graph( {
